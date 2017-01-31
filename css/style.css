@@ -1,0 +1,124 @@
+/*!
+Styles for full screen background video demo
+*/
+/* =============================================================================
+  RESETS
+============================================================================= */
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+  HTML, BODY
+============================================================================= */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+/*   line-height: 2; */
+  font-weight: 100;
+}
+
+/* =============================================================================
+  CONTENT
+============================================================================= */
+.content {
+  position: relative;
+  top: 20%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+/*   background: rgba(0, 188, 242, 0.5); */
+}
+
+.par_color {
+  color: rgba(0, 188, 242, 1);
+}
+
+.content__title {
+  margin-bottom: 24px;
+  color: #272727;
+/*   color: rgba(255,255,255,1); */
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.content__heading {
+  margin-bottom: 24px;
+  color: #272727;
+  font-size: 32px;
+}
+
+.content__teaser {
+  margin-bottom: 24px;
+  color: #595959;
+  font-size: 18px;
+}
+
+.content__cta {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 48px;
+  color: rgba(0, 188, 242, 1);
+  font-size: 18px;
+  text-decoration: none;
+  border: solid 4px rgba(0, 188, 242, 1);
+}
+
+.content__footer {
+  margin-top: 48px;
+  color: #a6a6a6;
+  font-size: 12px;
+}
+
+/* =============================================================================
+  VIDEO
+============================================================================= */
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
