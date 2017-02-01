@@ -32,15 +32,15 @@
   <h1 class="content__title">openBrain<wbr><span class="par_color">.Science</span></h1>
   <p class="content__teaser">
   <span id="error" style="display:none"> Please fill all required fields </span>
-  	<form id="login_form" action="./backend" method="post" onsubmit="return checkform(this);">
+  	<form id="login_form" action="./backend.html?mode=login" method="post" onsubmit="return checkform(this);">
 		<input id="email" name="email" type="email" placeholder="Email Address" required="" class="content__cta">
 		</br>
 		<input id="password" name="password" type="password" placeholder="Password" class="content__cta" required="">
 		</br>
-        <input id="submit" class='content__cta' style="background-color: white;" type="submit" value="Login">
 	</form>
 
   </p>
+    <a href="/backend?method=login" target="_blank" class="content__cta">Login</a>
   <a href="mailto:info@openbrain.sciece?subject=Login Problem" target="_blank" class="">Can not login?</a>
 </div><!-- /content -->
 <!-- 
