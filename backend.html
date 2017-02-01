@@ -9,39 +9,15 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   
-<script>
-  function checkform(form) {
-    var inputs = form.getElementsByTagName('input');
-    for (var i = 0; i < inputs.length; i++) {
-        if(inputs[i].hasAttribute("required")){
-            if(inputs[i].value == ""){
-                document.getElementById('error').style.display = "block";
-                return false;
-            }
-        }
-    }
-    return true;
-}
-
-</script>
-  
 </head>
 <body>
   
 <div class="content">
   <h1 class="content__title">openBrain<wbr><span class="par_color">.Science</span></h1>
   <p class="content__teaser">
-  <span id="error" style="display:none"> Please fill all required fields </span>
-  	<form id="login_form" action="./backend?mode=login" method="post" onsubmit="return checkform(this);">
-		<input id="email" name="email" type="email" placeholder="Email Address" required="" class="content__cta">
-		</br>
-		<input id="password" name="password" type="password" placeholder="Password" class="content__cta" required="">
-		</br>
-        <input id="submit" class='content__cta' style="background-color: white;" type="submit" value="Login">
-	</form>
-
-  </p>
-  <a href="mailto:info@openbrain.sciece?subject=Login Problem" target="_blank" class="">Can not login?</a>
+  <span id="error"> Invalid Credentials </span>
+  <p><a href="/login" target="_blank" class="content__cta">Back to login</a></p>
+  <a href="mailto:info@openbrain.sciece?subject=Login Problem" target="_blank" class="">Need help?</a>
 </div><!-- /content -->
 <!-- 
 
