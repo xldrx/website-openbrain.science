@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
   
 <script>
-  function checkform(form) {
-    var inputs = form.getElementsByTagName('input');
+  function checkform() {
+    var inputs = document.getElementsByTagName('input');
     for (var i = 0; i < inputs.length; i++) {
         if(inputs[i].hasAttribute("required")){
             if(inputs[i].value == ""){
@@ -40,7 +40,8 @@
 	</form>
 
   </p>
-    <a href="/backend?method=login" target="_blank" class="content__cta">Login</a>
+  <a href="/backend?method=login" target="_blank" class="content__cta" onsubmit="return checkform();" >Login</a>
+  <br/>
   <a href="mailto:info@openbrain.sciece?subject=Login Problem" target="_blank" class="">Can not login?</a>
 </div><!-- /content -->
 <!-- 
